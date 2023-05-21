@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style type="text/css">
+   
+
+   body{
+    
+   }
+   .container{
+        height:1250px;
+        width:700px;
+        background-color: rebeccapurple;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        margin-top: 200px;
+        margin-bottom: 200px;
+        position: absolute;
+        box-shadow: 0 0 30px gold;
+   }
+
+   label{
+    margin-left: 70px;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 8px;
+   
+   }
+   input{
+    margin-left: 100px;
+    padding: 10px;
+    height: -20px;
+    width: 200px;
+    margin-top: 5px;
+    margin-bottom:10px;
+    transition: width 2s;;
+   }
+   input:hover{
+        width:250px;
+        height: -10px;
+        box-shadow: 0 0 10px white;
+   }
+    h1{
+        color: white;
+        text-align: center;
+        margin-top: 50px;
+    }
+     
+#male,#female,#others{
+     margin-left: 30px;
+}
+#red,#blue,#green,#white{
+    margin-left: 30px;
+}
+input[type=radio]{
+    margin-right: -150px;
+}
+input[type=checkbox]{
+    margin-right: -150px;
+}
+input[type=reset]{
+    background-color: red;
+    color: white;
+}
+input[type=submit]{
+    background-color:blue;
+    color: white;
+}
+
+    </style>
+
+
+
+   
+</head>
+<body>
+
+      <div class="container">
+        
+       <table>
+        <form>
+       
+        <tr><h1>REGISTRATION FORM</h1></tr>
+
+        <tr><td><label for="image">Your Image:</label></td>
+        <td><input type="image" src="vishnu.jpg.jpeg" height="70" width="70" value="submit"></td>
+
+        <tr><td><label for="fname">First Name:</label></td>
+        <td><input type="text" name="fname" id="fname" placeholder="First Name"></td></tr>
+
+        <tr><td><label for="lname">Last Name:</label></td>
+        <td><input type="text" name="lname" id="lname" placeholder="Last Name"></td></tr>
+
+        <tr><td><label for="uname">User Name:</label></td>
+        <td><input type="text" name="uname" id="uname" placeholder="User Name"></td></tr>
+
+        <tr><td><label for="email">Email ID:</label></td>
+        <td><input type="email" name="email" id="email" placeholder="Enter your Email"></td></tr>
+
+        <tr><td><label for="phnumber">Ph Number:</label></td>
+        <td><input type="number" name="phnumber" id="phnumber" placeholder="Enter your phone Number"></td></tr>
+
+        <tr><td><label for="pass1">Password:</label></td>
+        <td><input type="password" name="pass1" id="pass1 " placeholder="Enter your password"></td></tr>
+
+        <tr><td><label for="pass2">Confirm Password:</label></td>
+        <td><input type="password" name="pass2" id="pass2 " placeholder="Confirm your password"></td>
+       
+        <div style="border:1px solid black;">
+            <tr><td><label name="gender"><u>Gender</u></label></td>
+            <td><input type="radio" name="Gender" id="male">
+            <label for="Gender">Male</label><br>
+            <input type="radio" name="Gender" id="female">
+            <label for="Gender">FeMale</label><br>
+            <input type="radio" name="Gender" id="others">
+            <label for="Gender">others</label></td></tr>
+        </div>
+        
+         <br><br><br>
+         
+        <div class="demo">
+            <tr><td><label name="fav"><u>Favorate Color</u></label></td>
+            <td><input type="checkbox" name="fav" id="red">
+            <label for="Favorate Color">Red</label><br>
+            <input type="checkbox" name="fav" id="blue">
+            <label for="Favorate Color">Blue</label><br>
+            <input type="checkbox" name="fav" id="green">
+            <label for="Favorate Color">Green</label><br>
+            <input type="checkbox" name="fav" id="white">
+            <label for="Favorate Color">white</label></td></tr>
+        </div>
+        
+        <tr><td><label for="date">Date Of Birth:</label></td>
+        <td><input type="date" name="date" id="date"></td></tr>
+
+        <tr><td><label for="date">Add Date:</label></td>
+        <td><input type="datetime-local" name="date" id="date"></td></tr>
+    
+      
+        <tr><td><label for="file">Send Your Adharcard:</label></td>
+        <td><input type="file" name="file" id="file" placeholder=""></td></tr>
+
+
+        <tr><td><label for="number">Set Your Age:</label></td>
+        <td><input type="number" name="number" id="number" placeholder=" Your Age"></td></tr>
+
+        <tr><td><label for="search">Search here:</label></td>
+        <td><input type="search" name="search" id="search" placeholder="Search here"></td></tr>
+
+        <tr><td><label for="url">Send your Portfolio:</label></td>
+        <td><input type="url" name="url" id="url" placeholder=" Portfolio link"></td></tr>
+    
+
+        <tr><td><input type="reset" value="reset"></td>
+        <td><input type="submit" value="submit"></td></tr>
+        
+
+        </form>
+        </table>
+        </div>    
+
+
+
+    
+    
+</body>
+</html>
